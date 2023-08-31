@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?fxml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.UserHomepageController">
+   <children>
+      <Label text="Homepage">
+         <padding>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <Label text="Welcome,">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="userNameLabel">
+               <HBox.margin>
+                  <Insets left="-10.0" />
+               </HBox.margin></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="300.0" prefWidth="500.0">
+         <children>
+            <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="300.0" spacing="50.0">
+               <children>
+                  <Label text="Email:">
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Phone Number:">
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Password">
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="300.0" spacing="55.0">
+               <children>
+                  <Label fx:id="userEmail" text="Email Holder">
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="userPhone" text="403-999-3333">
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="UserPassword" text="********">
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="313.0" spacing="45.0">
+               <children>
+                  <TextField fx:id="emailTXT" maxWidth="-Infinity" prefWidth="250.0" promptText="Change email" />
+                  <TextField fx:id="phoneTXT" maxWidth="-Infinity" prefWidth="250.0" promptText="Change Phone Number" />
+                  <TextField fx:id="passwordTXT" maxWidth="-Infinity" prefWidth="250.0" promptText="Change password" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox fx:id="saveHbox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button fx:id="editbutton" mnemonicParsing="false" onAction="#editInfoAction" text="Edit my information">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="saveChangesbutton" maxWidth="-Infinity" mnemonicParsing="false" onAction="#saveChanges" prefWidth="125.0" text="Save changes">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+         </children></HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <VBox fx:id="editVbox2" alignment="CENTER" prefHeight="200.0" prefWidth="300.0" spacing="30.0">
+               <children>
+                  <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#coursepageaction" prefWidth="125.0" text="Edit my courses">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#findTutor" prefWidth="125.0" text=" Find tutors ">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#findStudentAction" prefWidth="125.0" text="Find students">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#logoutAction" prefWidth="125.0" text="Log out" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

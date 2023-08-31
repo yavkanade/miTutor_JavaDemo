@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox fx:id="findStudentPageVbox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.FindStudensController">
+   <children>
+      <Label text="Find a student">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Label text="Find students who need help with:" />
+            <ChoiceBox fx:id="courseTeachChoiceBox" prefWidth="150.0" />
+            <Button mnemonicParsing="false" onAction="#actionFindStudents" text="Find" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+     <VBox fx:id="findStudentPageVbox" prefHeight="200.0" prefWidth="100.0" />
+      <Button mnemonicParsing="false" onAction="#goHomePage" text="&lt; Back" />
+      <Label />
+   </children>
+</VBox>

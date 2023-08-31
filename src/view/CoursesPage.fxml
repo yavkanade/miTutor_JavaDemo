@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" spacing="30.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CoursesPageController">
+   <children>
+      <Label text="My courses">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Label text="Example:" textFill="#000000a5" />
+            <Label text="Course name:" />
+            <TextField editable="false" prefHeight="51.0" prefWidth="225.0" text="CPSC219" />
+         </children>
+      </HBox>
+      <Label text="Courses I need help with">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox fx:id="userCoursesLearn" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+      <Label text="Courses I can teach">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <VBox fx:id="userCoursesTeach" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+      <VBox fx:id="userCoursesLearn1" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goHomePage" text="&lt; Back" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.FindTutorsController">
+   <children>
+      <Label text="Find your tutor">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Label text="Find students who can help with:" />
+            <ChoiceBox fx:id="courseLearnChoiceBox" prefWidth="150.0" />
+            <Button mnemonicParsing="false" onAction="#actionFindTeachers" text="Find" />
+         </children>
+      </HBox>
+      <VBox fx:id="findTutorPageVbox" prefHeight="200.0" prefWidth="100.0" />
+      <Button mnemonicParsing="false" onAction="#goHomePage" text="&lt; Back" />
+   </children>
+</VBox>

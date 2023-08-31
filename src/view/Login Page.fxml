@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" spacing="30.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController2">
+   <children>
+      <Label text="Welcome!">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="wrongLoginLabel">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginUsername" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="150.0" promptText="Email" />
+      <PasswordField fx:id="loginPassword" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="150.0" promptText="Password" />
+      <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#loginAction" prefHeight="25.0" prefWidth="100.0" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="createAccountHyperlink" onAction="#signUpAction" text="Create an Account" textFill="WHITE" />
+   </children>
+</VBox>
